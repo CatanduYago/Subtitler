@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@google-cloud/speech": "^6.7.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.41.0"
+  }
+}

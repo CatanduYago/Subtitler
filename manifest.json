@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Live Captioning Extension",
+  "version": "1.0",
+  "description": "Transcribe audio de la pestaña activa y muestra subtítulos.",
+  "permissions": [
+    "activeTab",
+    "tabCapture",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
