@@ -1,4 +1,4 @@
-# 🎧 Subtitler 🎉
+# 🎧 Subtitler 
 
 **Aplicación para transcribir a texto el audio recibido por micrófono en tiempo real.**
 
