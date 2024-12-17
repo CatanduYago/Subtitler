@@ -66,10 +66,6 @@ Sigue estos pasos para instalar y ejecutar la aplicación en tu máquina local:
    ```
 5. 📚 Abre un **Pull Request**.
 
-## 📜 Licencia
-
-Este proyecto está licenciado bajo la **Licencia MIT**. Para más detalles, consulta el archivo `LICENSE`.
-
 ## 📧 Contacto
 
 Si tienes alguna pregunta o sugerencia, no dudes en contactarnos:
