@@ -1,33 +1,26 @@
-# 🎙️ Subtitler 🎉
+# 🎧 Subtitler 🎉
 
 **Aplicación para transcribir a texto el audio recibido por micrófono en tiempo real.**
 
----
-
 ## 📝 Descripción
 
-Subtitler es una aplicación web que transcribe en tiempo real el audio recibido a través del micrófono del usuario. Utiliza tecnologías como **JavaScript**, **HTML** y **CSS** para ofrecer una interfaz amigable, intuitiva y funcional, accesible desde la mayoría de los navegadores modernos.
+Subtitler es una aplicación web que transcribe en tiempo real el audio recibido a través del micrófono del usuario. Utiliza tecnologías como **JavaScript**, **HTML** y **CSS** para ofrecer una interfaz amigable, intuitiva y funcional. 
 
-Ademas de transcribir traducimos al idioma objetivo
-
----
+> [!IMPORTANT] La aplicación solo es compatible con **Google Chrome**, ya que utiliza la API `webkitSpeechRecognition`, la cual es exclusiva de Chrome.
 
 ## 🚀 Características
 
 - ✅ **Transcripción en tiempo real:** Convierte el audio del micrófono en texto instantáneamente.
 - 🎨 **Interfaz amigable:** Diseño limpio y fácil de usar.
-- 🌐 **Compatibilidad:** Funciona en la mayoría de los navegadores modernos.
-
----
+- 🔧 **Compatibilidad limitada:** Funciona exclusivamente en el navegador **Google Chrome**.
 
 ## 🛠️ Tecnologías Utilizadas
 
 - ⚙️ **JavaScript** (92.6%)
 - 📄 **HTML** (4.7%)
+- 🎨 **CSS** (2.7%)
 
----
-
-## 📥 Instalación
+## 💾 Instalación
 
 Sigue estos pasos para instalar y ejecutar la aplicación en tu máquina local:
 
@@ -41,21 +34,17 @@ Sigue estos pasos para instalar y ejecutar la aplicación en tu máquina local:
    cd Subtitler
    ```
 
-3. 🌐 Abre el archivo `index.html` en tu navegador web.
+3. 🌐 Abre el archivo `index.html` en **Google Chrome**.
 
 4. 🎤 Permite el acceso al micrófono cuando el navegador lo solicite.
 
 5. 🎉 ¡Disfruta viendo cómo tu audio se transcribe automáticamente en la pantalla!
 
----
-
 ## 🖥️ Uso
 
-- 🌐 Abre el archivo **index.html** en tu navegador.
+- 🌐 Abre el archivo **index.html** en **Google Chrome**.
 - 🎤 Permite el acceso al micrófono.
 - 👀 Observa cómo el texto aparece en tiempo real mientras hablas.
-
----
 
 ## 🤝 Contribuciones
 
@@ -76,13 +65,9 @@ Sigue estos pasos para instalar y ejecutar la aplicación en tu máquina local:
    ```
 5. 📚 Abre un **Pull Request**.
 
----
-
 ## 📜 Licencia
 
 Este proyecto está licenciado bajo la **Licencia MIT**. Para más detalles, consulta el archivo `LICENSE`.
-
----
 
 ## 📧 Contacto
 
@@ -90,6 +75,3 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarnos:
 
 - ✉️ **Email:** [ycatalanoa01@gmail.com](mailto:ycatalanoa01@gmail.com)
 
----
-
-✨ ¡Gracias por usar Subtitler! 🎉 ✨
