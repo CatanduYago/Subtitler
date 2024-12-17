@@ -8,6 +8,8 @@
 
 Subtitler es una aplicación web que transcribe en tiempo real el audio recibido a través del micrófono del usuario. Utiliza tecnologías como **JavaScript**, **HTML** y **CSS** para ofrecer una interfaz amigable, intuitiva y funcional, accesible desde la mayoría de los navegadores modernos.
 
+Ademas de transcribir traducimos al idioma objetivo
+
 ---
 
 ## 🚀 Características
