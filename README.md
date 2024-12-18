@@ -7,13 +7,13 @@
 Subtitler es una aplicación web que transcribe en tiempo real el audio recibido a través del micrófono del usuario. Utiliza tecnologías como **JavaScript**, **HTML** y **CSS** para ofrecer una interfaz amigable, intuitiva y funcional. 
 
 > [!IMPORTANT]
-> La aplicación solo es compatible con **Google Chrome**, ya que utiliza la API `webkitSpeechRecognition`, la cual es exclusiva de Chrome.
+> La aplicación solo es compatible con **Google Chrome, Microsoft Edge y Safari**, ya que utiliza la API `webkitSpeechRecognition`, servicio de Google.
 
 ## 🚀 Características
 
 - ✅ **Transcripción en tiempo real:** Convierte el audio del micrófono en texto instantáneamente.
 - 🎨 **Interfaz amigable:** Diseño limpio y fácil de usar.
-- 🔧 **Compatibilidad limitada:** Funciona exclusivamente en el navegador **Google Chrome**.
+- 🔧 **Compatibilidad limitada:** Funciona exclusivamente en los navegadores **Google Chrome, Microsoft Edge y Safari**.
 
 ## 🛠️ Tecnologías Utilizadas
 
