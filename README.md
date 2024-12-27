@@ -11,7 +11,7 @@
 🇪🇸  
 Subtitler es una aplicación web que transcribe en tiempo real el audio recibido a través del micrófono del usuario. Utiliza tecnologías como **JavaScript**, **HTML** y **CSS** para ofrecer una interfaz amigable, intuitiva y funcional.
 
-🇬🇧  
+🇬🇧
 Subtitler is a web application that transcribes audio received from the user's microphone in real time. It uses technologies such as **JavaScript**, **HTML**, and **CSS** to provide a friendly, intuitive, and functional interface.
 
 > [!IMPORTANT]  
