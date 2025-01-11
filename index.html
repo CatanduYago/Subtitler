@@ -14,23 +14,42 @@
 
   <script src="./js/script.js" defer></script>
   <script src="./js/darkmode.js" defer></script>
+  <script src="./js/language.js" defer></script>
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100">
 
   <!-- Contenido principal -->
   <div class="container text-center py-5">
+
+    <!-- Darkmode switch button -->
     <button id="dark-mode-btn" class="btn btn-secondary">Modo Oscuro</button>
 
-    <h1 class="mb-4">Transcripción en Tiempo Real</h1>
-    <p>Esta aplicación transcribe en tiempo real el audio recibido por el micrófono. Funciona en los navegadores Chrome,
-      Edge y Safari. Tanto en ordenadores como en teléfonos móviles</p>
+    <!-- Language switch button -->
+    <button id="language-switcher" class="language-switcher btn btn-warning">
+      <span data-lang="es" class="language-desc">ESP</span>
+      <span data-lang="en" style="display: none" class="language-desc">ENG</span>
+      <img id="language-icon" src="./assets/espana.png" alt="Idioma" class="language-icon" />
+    </button>
 
-  
+    <h1 class="mb-4" data-lang="es">Transcripción en Tiempo Real</h1>
+    <h1 class="mb-4" data-lang="en" style="display: none;">Real-Time Transcription</h1>
+
+    <p data-lang="es">
+      Esta aplicación transcribe en tiempo real el audio recibido por el micrófono. Funciona en los navegadores Chrome,
+      Edge y Safari. Tanto en ordenadores como en teléfonos móviles.
+    </p>
+    <p data-lang="en" style="display: none;">
+      This app transcribes audio received through the microphone in real-time. It works on Chrome, Edge, and Safari
+      browsers,
+      both on desktop and mobile devices.
+    </p>
+
     <div class="row mb-3 justify-content-center">
-        <!-- Selector de idioma hablado -->
+      <!-- Selector de idioma hablado -->
       <div class="col-md-4">
-        <label for="input-lang" class="form-label">Idioma de Entrada:</label>
+        <label for="input-lang" class="form-label" data-lang="es">Idioma de Entrada:</label>
+        <label for="input-lang" class="form-label" data-lang="en" style="display: none;">Input Language:</label>
         <select id="input-lang" class="form-select">
           <option value="es-ES">Español</option>
           <option value="en-US">Inglés</option>
@@ -39,9 +58,11 @@
           <option value="it-IT">Italiano</option>
         </select>
       </div>
-          <!-- Selector de idioma de salida -->
+
+      <!-- Selector de idioma de salida -->
       <div class="col-md-4">
-        <label for="output-lang" class="form-label">Idioma de Salida:</label>
+        <label for="output-lang" class="form-label" data-lang="es">Idioma de Salida:</label>
+        <label for="output-lang" class="form-label" data-lang="en" style="display: none;">Output Language:</label>
         <select id="output-lang" class="form-select">
           <option value="en">Inglés</option>
           <option value="es">Español</option>
@@ -55,23 +76,26 @@
     </div>
 
     <div class="d-grid gap-2 d-md-block">
-      <button id="start-btn" class="btn btn-success me-2">Iniciar</button>
+      <button id="start-btn-en" class="btn btn-success me-2" data-lang="en" style="display: none;">Start</button>
+      <button id="start-btn-es" class="btn btn-success me-2" data-lang="es">Iniciar</button>
     </div>
-  </div>
 
-  <!-- Overlay para la transcripción -->
-  <div id="overlay"
-    class="position-fixed top-0 start-0 w-100 h-100 d-none bg-dark text-white align-items-center justify-content-center">
-    <div class="text-center">
-      <div id="live-caption-container" class="fs-4 mb-3">Capturando audio...</div>
-      <button id="exit-btn" class="btn btn-danger">Salir</button>
+    <!-- Overlay para la transcripción -->
+    <div id="overlay"
+      class="position-fixed top-0 start-0 w-100 h-100 d-none bg-dark text-white align-items-center justify-content-center">
+      <div class="text-center">
+        <div id="live-caption-container" class="fs-4 mb-3">Capturando audio...</div>
+        <button id="exit-btn" class="btn btn-danger" >Stop</button>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="mt-auto bg-dark text-white text-center py-3">
     <div class="container">
-      <p class="mb-2">© 2024 Todos los derechos reservados | Creado por <strong>Yago Catalano</strong>❤️</p>
+      <p data-lang="es">© 2024 Todos los derechos reservados | Creado por <strong>Yago Catalano</strong>❤️</p>
+      <p data-lang="en" style="display: none;">© 2024 All rights reserved | Created by <strong>Yago Catalano</strong>❤️
+      </p>
       <div>
         <a href="https://twitter.com/ycatalanoa" target="_blank" class="text-white me-3">
           <i class="bi bi-twitter-x fs-4"></i>
@@ -80,11 +104,14 @@
           <i class="bi bi-linkedin fs-4"></i>
         </a>
       </div>
+
       <div>
         Contáctame a través de mi correo <a href="mailto:ycatalanoa01@gmail.com"
           class="text-white">ycatalanoa01@gmail.com</a>
       </div>
+
     </div>
+
   </footer>
 
 </body>
